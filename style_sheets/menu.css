@@ -1,0 +1,367 @@
+/* import home page style sheet */
+@import "style.css";
+
+.nav-Link {
+  color: var(--blue-color);
+  border-color: var(--blue-color);
+}
+
+/* cow print styling ------------------------------------------ */
+.cow-Print3 {
+  position: absolute;
+  top: 8vw;
+  width: 65vw;
+  left: -1vw;
+  z-index: 1;
+}
+
+/* floating word styling --------------------------------------- */
+.featured-Word {
+  width: 45%;
+  position: absolute;
+  top: 10vw;
+  left: 50%;
+  z-index: 0;
+  animation: floating 6s ease-in-out infinite;
+}
+
+/* featured header styling ----------------------------------------- */
+.featured-Header {
+  z-index: 3;
+  font-size: 8vw;
+  color: #fff;
+  font-family: var(--header-font);
+  letter-spacing: 8px;
+  position: absolute;
+  top: 13vw;
+  left: 6vw;
+  width: 80%;
+}
+
+.featured-Cone {
+  width: 31vw;
+  z-index: 3;
+  -webkit-transform: rotate(25deg);
+  position: absolute;
+  top: 25vw;
+  left: 5%;
+}
+
+.featured-Text {
+  width: 32vw;
+  z-index: 3;
+  font-family: var(--text-font);
+  color: #fff;
+  font-size: 2vw;
+  position: absolute;
+  top: 60vw;
+  left: 25vw;
+  line-height: 1.6;
+}
+
+.price-Header {
+  font-family: var(--header-font);
+  font-size: 4vw;
+  margin-bottom: 3px;
+  padding-left: 11px;
+}
+
+.price {
+  font-family: var(--text-font);
+  font-size: 2vw;
+}
+
+.price-Section {
+  width: 30vw;
+  position: absolute;
+  top: 53vw;
+  left: 68vw;
+}
+
+/* MENU STYLING ----------------------------------------------- */
+.menu-Title {
+  font-family: var(--header-font);
+  font-size: 6vw;
+  letter-spacing: var(--header-letter-spacing);
+  margin-bottom: 10px;
+  
+}
+
+.main-Wrap {
+  position: absolute;
+  top: 85vw;
+  left: 10%;
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.flavor-Img {
+  width: 300px;
+  transition: 0.4s;
+  margin-bottom: 5px;
+}
+
+.flavor-Img:hover {
+  transform: scale(1.075);
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.flavor {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  margin-bottom: 25px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-Text {
+  font-family: var(--text-font);
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+}
+
+.toppings-Header {
+  font-family: var(--header-font);
+  font-size: 6vw;
+  letter-spacing: var(--header-letter-spacing);
+  margin-bottom: 10px;
+}
+
+.toppings-List {
+  font-family: var(--text-font);
+  font-size: 2vw;
+  color: black;
+  text-align: center;
+}
+
+.toppings-Section {
+  text-align: center;
+  padding-bottom: 5vw;
+}
+
+/* FOR MOBILE DEVICES */
+@media screen and (max-width: 480px) {
+  .featured-Header {
+    color: black; 
+    top: 5%;
+    text-align: center;
+    font-size: 20vw;
+    z-index: -1;
+  }
+
+  .price-Section {
+    width: 80%;
+    top: 1125vw;
+    left: 30%;
+  }
+  
+  .price-Header {
+    width: 100%;
+    font-family: var(--header-font);
+    font-size: 9vw;
+    margin-bottom: 1vw;
+    margin-top: 10vw;
+  }
+
+  .price {
+    font-family: var(--text-font);
+    font-size: 4vw;
+    margin-bottom: 1vw
+  }
+
+  .featured-Word {
+    width: 110%;
+    top: 40%;
+    left: -5%;
+    display: none;
+  }
+
+  .cow-Print3 {
+    width: 100%;
+    top: 30%;
+    z-index: -1;
+  }
+
+  .featured-Cone {
+    top: 25%;
+    width: 50%;
+    left: 0;
+    z-index: 1;
+  }
+
+  .featured-Text {
+    font-size: 4vw;
+    width: 55%;
+    top: 115vw;
+  }
+
+  body {
+    overflow-x: none;
+    width: 100%;
+  }
+  
+  .cow-Print1 {
+    display: none;
+  }
+
+  .cow-Print1-Mobile {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    top: -0.5vh;
+  }
+
+  .cow-Logo {
+    display: none;
+  }
+
+  .menu-title {
+    font-size: 9vw;
+  }
+
+  .nav-Link {
+    display: none;
+  }
+
+  .name-Logo {
+    width: 100%;
+  }
+
+  .name-Logo-Wrapper {
+    width: 80%;
+    left: 10%;
+    top: 25%;
+  }
+
+  .cow-Print2-Mobile {
+    display: inline;
+    width: 100%;
+    position: absolute;
+    top: 75%;    
+  }
+
+  .menu-Title {
+    font-family: var(--header-font);
+    font-size: 9vw;
+    letter-spacing: var(--header-letter-spacing);
+    margin-bottom: 10px;
+    margin-top: 80vw;
+  }
+
+  .toppings-List {
+    font-family: var(--text-font);
+    font-size: 4vw;
+    color: black;
+    text-align: center;
+  }
+
+  .toppings-Header {
+    font-size: 9vw;
+    padding-left: 30px;
+    width: 80%;
+  }
+  
+  .toppings-Section {
+    left: 10%;
+    text-align: center;
+    padding-bottom: 5vw;
+    top: 5000vw;
+  }
+
+  .featured-Cone {
+    top: 25%;
+    width: 50%;
+    left: 0;
+    z-index: -1;
+  }
+
+}
+/* MOBILE HAMBURGER NAV STYLING ---------------------- */
+/* [ON BIG SCREEN] */
+/* (A) WRAPPER */
+#navbar {
+  width: 100%;
+  background: ##6d9eeb;
+}
+
+/* (B) HORIZONTAL MENU ITEMS */
+#options { display: flex; }
+#options .mobile-Nav {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  display: none;
+  font-family: var(--text-font);
+  font-size: 3vw;
+}
+#options .mobile-Nav:hover { 
+  background: #6d9eeb; 
+}
+
+/* (C) HIDE HAMBURGER */
+#navbar label, #hamburger { 
+  display: none; 
+}
+
+/* ON SMALL SCREENS */
+@media screen and (max-width: 768px){
+  /* change to vertical*/
+  #options .mobile-Nav {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #fff;
+    z-index: 3;
+    margins: 0vw;
+    padding: 5vw;
+  }
+ 
+  #navbar label { 
+    z-index: 3;
+    display: inline-block; 
+    color: white;
+    background: #6d9eeb;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  #navbar {
+    background-color: #6d9eeb;
+    z-index: 3;
+  }
+
+  #options { 
+    display: none; 
+    z-index: 3;
+    margins: 0vw;
+    padding: 0vw;
+  }
+  
+  #navbar input:checked ~ #options {
+    display: block;
+    z-index: 3;
+  }
+
+  label {
+    z-index: 3;
+  }
+
+  .mobile-Nav-Wrap {
+    z-indez: 3;
+  }
+  
+}

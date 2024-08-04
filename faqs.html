@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>FAQs | The Chubby Cow</title>
+    <link href="style_sheets/faqs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="menu_img/chubby_cow_logo_no_bg.png"/>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />    
+    <style>
+      .accordian-First {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+      
+      .accordion {
+        background-color: #fff;
+        border-bottom: 1px solid #000;
+        color: black;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        outline: none;
+        font-size: 16px;
+        transition: 0.4s;
+        font-family: var(--text-font);
+      }
+
+      .accordian-Last {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-color: #fff;
+      }
+      
+      .active, .accordion:hover {
+        background-color: #ccc; 
+      }
+      
+      .panel {
+        padding: 18px;
+        padding-right: 6px;
+        display: none;
+        background-color: white;
+        overflow: hidden;
+        text-align: left;
+        width: 95%;
+        font-family: var(--text-font);
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+      }
+
+      .panel-Last {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+      }
+
+      @media screen and (max-width: 600px) {
+        .panel {
+          padding-left: 7px;
+          padding-right: 7px;
+        }
+        
+      }
+      
+    </style>
+  </head>
+  <body>
+    <!--cow logo-->
+    <a href="index.html"><img src="home_page_img/chubby_logo.png" class="cow-Logo" alt="Chubby Cow Logo"/></a> 
+    <div class="nav">
+      <!-- begin series of links -->
+        <a href="menu.html" class="nav-Link">Menu</a>
+        <a href="about.html" class="nav-Link">About</a>
+        <a href="socials.html" class="nav-Link">Socials</a>
+        <a href="faqs.html" class="nav-Link">FAQs</a>
+        <a href="contact.html" class="nav-Link">Contact</a>
+    </div>  
+  
+        <!-- (A) MENU WRAPPER -->
+    <div class="mobile-Nav-Wrap">
+      <nav id="navbar">
+        <!-- (B) THE HAMBURGER -->
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger"/>
+       
+        <!-- (C) MENU ITEMS -->
+        <div id="options">
+          <a href="index.html" class="mobile-Nav">Home</a>
+          <a href="menu.html" class="mobile-Nav">Menu</a>
+          <a href="about.html" class="mobile-Nav">About</a>
+          <a href="socials.html" class="mobile-Nav">Socials</a>
+          <a href="contact.html" class="mobile-Nav">Contact</a>
+        </div>
+      </nav>
+
+      <!-- cow print on right--> 
+      <img src="faqs_img/cow_print12.svg" class="cow-Print cow-Print12"/>
+
+      <!-- text in cow print--> 
+          <h3 class="questions">Other questions? <a href="https://www.thechubbycowct.com/contact.html"> Reach out!</a></h3>
+      
+      
+
+    <!-- FAQ CONTAINER AND HTML -->
+      <h3 class="faq-Header">FAQs</h3>
+      <main class="faq-Container">
+        <button class="accordion accordian-First">Where are you located?</button>
+        <div class="panel">
+          <p>We are located in New Haven, Connecticut. This is our only location at the moment!</p>
+        </div>
+        
+        <button class="accordion">What are your prices?</button>
+        <div class="panel">
+          <p>We charge $2.15 per scoop and $0.50 per topping. You can also visit our menu for more information!</p>
+        </div>
+        
+        <button class="accordion">Do you have any vegan options?</button>
+        <div class="panel">
+          <p>All of our products are vegetarian but Moo-Nilla, Chubby Cow, and Purple Cow are also available vegan!</p>
+        </div>
+        
+        <button class="accordion">Do you allow pets?</button>
+        <div class="panel">
+          <p>We only allow small dogs in our establishment but we do sell special ice cream for pets including Moo-Nilla and Purple Cow!</p>
+        </div>
+       
+        <button class="accordion">Do you have gift cards?</button>
+        <div class="panel">
+          <p>Yes! You can find gift cards to The Chubby Cow in our store!</p>
+        </div>
+
+        <button class="accordion">Are you a nut-free ice cream shop?</button>
+        <div class="panel">
+          <p>While we do serve peanuts and walnuts as toppings, none of our ice cream flavors contain nuts. You can also ask a scooper for assistance if you have any other specific questions!</p>
+        </div>
+        
+        <button class="accordion">Do you do any fundraising or catering?</button>
+        <div class="panel">
+          <p>Yes! You can send us a message and/or email and we will be happy to help!</p>
+        </div>
+        
+        <button class="accordion">What flavor do you recommend?</button>
+        <div class="panel">
+          <p>All of our flavors are so delicious that it can be hard to choose! We definitely recommend trying The Chubby Cow since it's our signature flavor!</p>
+        </div>
+       
+        <button class="accordion">Do you sell ice cream cakes?</button>
+        <div class="panel">
+          <p>Not currently, but we are always looking to add new items to our menu so keep an eye out!</p>
+        </div>
+
+        <button class="accordion accordian-Last">What's your cow's name?</button>
+        <div class="panel panel-Last">
+          <p>That's Charlie! He's pretty cute 😁!</p>
+        </div>
+      </main>
+
+      <!-- BOTTOM IMAGE -->
+      <img src="faqs_img/shop_img5.jpg" class="shop-Img5" alt="Ice Cream Shop Photo"/>
+    
+    <script src="js/faqs.js">
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

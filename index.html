@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>The Chubby Cow</title>
+    <link href="style_sheets/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="menu_img/chubby_cow_logo_no_bg.png"/>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />    
+  </head>
+  <body>
+    
+    <!--cow logo-->
+    <a href="index.html"><img src="home_page_img/chubby_logo.png" class="cow-Logo" alt="Chubby Cow Logo"/></a> 
+
+      
+      <!-- DESKTOP/LAPTOP NAV --------------------------------------------- -->
+      <div class="nav">
+        <a href="menu.html" class="nav-Link">Menu</a>
+        <a href="about.html" class="nav-Link">About</a>
+        <a href="socials.html" class="nav-Link">Socials</a>
+        <a href="faqs.html" class="nav-Link">FAQs</a>
+        <a href="contact.html" class="nav-Link">Contact</a>
+      </div> 
+
+    <!-- MOBILE NAV BAR ---------------------------------------------- -->
+    <div class="mobile-Nav-Wrap">
+      <nav id="navbar">
+        <!-- bar icon -->
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger"/>
+       
+        <!-- nav bar links -->
+        <div id="options">
+          <a href="menu.html" class="mobile-Nav">Menu</a>
+          <a href="about.html" class="mobile-Nav">About</a>
+          <a href="socials.html" class="mobile-Nav">Socials</a>
+          <a href="faqs.html" class="mobile-Nav">FAQs</a>
+          <a href="contact.html" class="mobile-Nav">Contact</a>
+        </div>
+      </nav>
+    </div>
+    
+    <!-- FIRST COW PRINT-------------------------------------------------->
+    <img src="home_page_img/cow_print1.png" class="cow-Print1 cow-Print-Right cow-Print"/>
+
+    <!-- FLOATING NAME ------------------------------------------------ -->
+    <div class="name-Logo-Wrapper">
+      <!--floating name-->
+      <img src="home_page_img/name_logo.png" class="name-Logo"/>
+    </div> 
+
+     <!-- second mobile cow print with ice cream cone within -------------->
+    <img src="mob_cow_print/cow_print2_mobile.svg" class="cow-Print2-Mobile"/>
+
+    <!-- ICE CREAM CONES ---------------------------------------------- -->
+    <!-- strawberry cone image -->
+    <img src="home_page_img/straw_home.png" class="strawberry-Cone" alt="Strawberry Ice Cream Cone Image"/>
+
+    <!-- chocolate cone image -->
+    <img src="home_page_img/choc_home.png" class="chocolate-Cone" alt="Chocolate Ice Cream Cone"/>
+
+    
+    <!-- WHO ARE WE SECTION -------------------------------------------->
+    <div class="description-Home-Container">
+      <h2 class="header-Home">Who Are We?</h2>
+      <p class="home-Description mobile-Font">We are a small ice cream shop located in New Haven, Connecticut. Our products come from locally sourced dairy farms in New Haven county! Half of all of our profits go to various charities throughout the state of Connecticut!</p>
+      <br>
+      <p class="home-Description mobile-Font">We sell a wide array of dairy products including ice cream cones, bowls, and more. We even sell special ice cream for pets!</p>
+      <br>
+      <p class="home-Description mobile-Font">The Chubby Cow was founded in February of 2022 by Emma Adams and Mari Arnold.</p>
+    </div> 
+
+    <!-- 2ND COW PRINT -------------------------------------------->
+    <img src="home_page_img/cow_print2.png" class="cow-Print2 cow-Print-Left cow-Print"/>
+
+    <!-- photo in cow print -->
+    <img src="home_page_img/shop_Photo1.jpg" class="shop-Card shop-Card1" alt="Ice Cream Shop Photo" onmouseover="this.src='home_page_img/shop_Photo2.jpg'" onmouseout="this.src='home_page_img/shop_Photo1.jpg'"/>
+
+<!--     <img src="home_page_img/shop_Photo2.jpg" class="shop-Card shop-Card2" alt="Ice Cream Shop Photo"/> -->
+
+
+    <!-- IFRAME MAP SECTION ---------------------------------------------- -->
+    <div class="map">
+      <h2 class="map-Header">Ice Cream Awaits You! Get Directions to The Chubby Cow!</h2>
+      <iframe class="map-Block" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47959.73354510222!2d-72.96411527476054!3d41.298347577606776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e7d8443a8070e5%3A0xf6a354c659b264ed!2sNew%20Haven%2C%20CT!5e0!3m2!1sen!2sus!4v1645739327453!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    
+
+    <!-- HOURS OF OPENING SECTION -------------------------------------------- -->
+    <div class="hours-Home">
+      <h2 class="header-Home">Hours</h2>
+      <p class="ind-Hour mobile-Font">Tuesdays:  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 11am-8pm</p>
+      <p class="ind-Hour mobile-Font">Wednesdays:  &nbsp; &nbsp; &nbsp; 11am-8pm</p>
+      <p class="ind-Hour mobile-Font">Thursdays:  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2pm-11pm</p>
+      <p class="ind-Hour mobile-Font">Fridays:  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2pm-11pm</p>
+      <p class="ind-Hour mobile-Font">Saturdays: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 4pm-11pm</p>
+      <p class="ind-Hour mobile-Font">Sundays:  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; 11am-11pm </p> 
+      <p class="ind-Hour mobile-Font"><strong>Closed Mondays</strong></p>
+    </div>
+
+    
+    <script src="js/home.js"></script>
+  </body>
+</html>

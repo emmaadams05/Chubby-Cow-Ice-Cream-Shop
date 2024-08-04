@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Home | The Chubby Cow</title>
+    <link href="style_sheets/about.css" rel="stylesheet" type="text/css" /> 
+    <link rel="icon" href="menu_img/chubby_cow_logo_no_bg.png"/>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />    
+  </head>
+  <body>
+    <!--cow logo-->
+    <a href="index.html"><img src="home_page_img/chubby_logo.png" class="cow-Logo" alt="Chubby Cow Logo"/></a>
+
+    <div class="nav">
+      <!-- begin series of links -->
+      <a href="menu.html" class="nav-Link">Menu</a>
+      <a href="about.html" class="nav-Link">About</a>
+      <a href="socials.html" class="nav-Link">Socials</a>
+      <a href="faqs.html" class="nav-Link">FAQs</a>
+      <a href="contact.html" class="nav-Link">Contact</a>
+    </div> 
+
+    
+        <!-- (A) MENU WRAPPER -->
+    <div class="mobile-Nav-Wrap">
+      <nav id="navbar">
+        <!-- (B) THE HAMBURGER -->
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger"/>
+       
+        <!-- (C) MENU ITEMS -->
+        <div id="options">
+          <a href="index.html" class="mobile-Nav">Home</a>
+          <a href="menu.html" class="mobile-Nav">Menu</a>
+          <a href="socials.html" class="mobile-Nav">Socials</a>
+          <a href="faqs.html" class="mobile-Nav">FAQs</a>
+          <a href="contact.html" class="mobile-Nav">Contact</a>
+        </div>
+      </nav>
+      
+    <!--Cow print 4 -->
+    <img src="about_pics/cow_print4.png" class="cow-Print cow-Print4"/>
+
+    <!-- blue section container -->
+    <section class="about-Owners">
+      <!-- header for blue section -->
+      <h1 class="about-Owners-Header">About the Owners</h1>
+  
+      <!-- text for blue section -->
+      <p class="about-Owners-Text">Hi! We are Emma and Mari and we are the owners of The Chubby Cow! We are both ice cream lovers from Connecticut and high schoolers that attend the Engineering and Science University Magnet School (ESUMS) located in New Haven, Connecticut. We are also avid coders and constructed The Chubby Cow’s website from scratch!</p>
+      <!-- shop img -->
+      <img src="about_pics/shop_pic2.jpg" class="shop-Pic2" alt="Ice Cream Shop Photo" onmouseover="this.src='about_pics/shop_pic6.jpg'" onmouseout="this.src='about_pics/shop_pic2.jpg'">
+    </section>
+
+    <section class="our-Stories">
+      <h1 class="our-Stories-Header">Our Stories</h1>
+      <p class="our-Stories-Text">Click the images below to learn about our individual stories!</p>
+    </section>
+
+    <img src="about_pics/emma.png" class="emma-Img circle-Img" id="emma" alt="Photo of Emma"/>
+    <img src="about_pics/mari.svg" class="mari-Img circle-Img" id="mari" alt="Photo of Mari"/>
+
+    
+    <!-- BEGIN EMMA MODAL -->
+    <div id="modal1" class="modal modal1">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="closeBtn" id="closeBtn1">&times;</span>
+          <h4>About Emma</h4>
+        </div>
+        <div class="modal-body">
+          <p class="modal-text">Hello! My name is Emma Adams and I am a junior at Engineering and Science University Magnet School (ESUMS) in New Haven. </p><br>
+          <p class="modal-text">Although I learned HTML in 2018, my fascination with web-development did not begin until I participated in a 2 week Summer program that taught me HTML, CSS, and JavaScript!</p><br>
+          <p class="modal-text">My favorite ice cream flavor is the <strong>Chubby Cow</strong>!</p>
+        </div>
+      </div>
+    </div>
+
+        <!-- BEGIN MARI MODAL -->
+    <div id="modal2" class="modal modal2">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="closeBtn" id="closeBtn2">&times;</span>
+          <h4>About Mari</h4>
+        </div>
+        <div class="modal-body">
+          <p class="modal-text">Hello! My name is Mari and I am a freshman in high school.</p><br>
+          <p class="modal-text">I immensely enjoy reading, coding, volunteering, and helping others. An interesting fact about me is that I have been dancing since I was two years old!</p><br>
+          <p class="modal-text">My favorite ice cream flavor is the <strong>Salty Cow</strong>!</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/about.js"></script>
+  </body>
+</html>
